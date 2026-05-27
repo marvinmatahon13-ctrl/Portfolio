@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvin E. Matahon — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+  <nav>
+    <div class="logo">Marvin<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#" class="active" onclick="go('home',event)">Home</a></li>
+      <li><a href="#"               onclick="go('about',event)">About</a></li>
+      <li><a href="#"               onclick="go('skills',event)">Skills</a></li>
+      <li><a href="#"               onclick="go('projects',event)">Projects</a></li>
+      <li><a href="#"               onclick="go('certs',event)">Certificates</a></li>
+      <li><a href="#"               onclick="go('contact',event)">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       HOME PAGE
+  ════════════════════════════════════ -->
+  <div class="page active" id="page-home">
+
+    <div class="home-left">
+      <div class="home-tag">Graduating IT Student · Open to Work</div>
+
+      <h1 class="home-name">
+        Marvin E.<br><span class="accent">Matahon</span>
+      </h1>
+
+      <div class="home-typed-row">
+        I'm a&nbsp;<span id="typedEl"></span><span class="blink"></span>
+      </div>
+
+      <p class="home-bio">
+        An IT graduating student from <strong>Davao del Norte State College who lives in Panabo City, Davao del Norte</strong> with a passion for hardware,
+        creative problem-solving, and bringing ideas to life.
+        I am the leader in our capstone project — I love turning a spark of an idea into something real.
+      </p>
+
+      <div class="home-pills">
+        <span class="pill">🔧 Hardware</span>
+        <span class="pill">💡 Idea Generator</span>
+        <span class="pill">🤖 AI Prompting</span>
+        <span class="pill">💻 Programming</span>
+        <span class="pill">🌏 Panabo City</span>
+      </div>
+
+      <div class="home-actions">
+        <button class="dl-btn" onclick="alert('Add your CV download link here!')">
+          ↓ Download CV
+        </button>
+        <div class="home-socials">
+          <!-- LinkedIn -->
+          
+          <!-- GitHub -->
+          
+          </a>
+          <!-- Facebook -->
+          <a class="soc" href="https://www.facebook.com/benben.matahon/" title="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125
+              11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235
+              2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612
+              23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-right">
+      <div class="glow-orb"></div>
+      <div class="photo-frame" id="photoFrame"
+           onclick="document.getElementById('photoInput').click()"
+           title="Click to upload your photo">
+        <div class="photo-placeholder" id="photoPlaceholder" style="display:none;">
+          <div class="ph-icon">📷</div>
+          <div>Click to upload<br>your photo</div>
+        </div>
+        <img id="photoImg" alt="Marvin Matahon" src="portfolio-pic.jfif" style="display:block;">
+        <div class="photo-overlay">📷 Change Photo</div>
+      </div>
+      <div class="photo-badge">
+        <div class="badge-icon">💡</div>
+        <div class="badge-text">
+          <strong>Capstone Leader</strong>
+          <span>IT Graduating Student · 21</span>
+        </div>
+      </div>
+      <input type="file" id="photoInput" accept="image/*" style="display:none;" onchange="loadPhoto(event)">
+    </div>
+
+  </div><!-- /page-home -->
+
+  <!-- ═══════════════════════════════════
+       ABOUT PAGE
+  ════════════════════════════════════ -->
+  <div class="page pg-wrap" id="page-about">
+
+    <div class="pg-header">
+      <div class="pg-eyebrow">Who I Am</div>
+      <div class="pg-title">About <span>Me</span></div>
+      <div class="pg-sub">Click any text below to edit it directly</div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-bio">
+        <p contenteditable="true">
+          I'm <strong>Marvin E. Matahon</strong>, a 21-year-old graduating IT student from Purok Dreamland,
+          Brgy Gredu, Panabo City, Davao del Norte. I'm someone who doesn't just follow ideas, I come up with them.
+          I was the originator of our capstone project, which says a lot about how I approach problems: head-on and with purpose.
+        </p>
+        <p contenteditable="true">
+          My strengths are rooted in <strong>hardware</strong> — I love getting hands-on with physical systems and
+          understanding how things work at the component level. I also dabble it a bit in programming and I've discovered a
+          serious knack for <strong>AI prompting</strong>, which I use to build and solve things faster and smarter.
+        </p>
+        <p contenteditable="true">
+          I describe myself as an <strong>idealistic realist</strong> — I dream big, but I keep my feet on the ground.
+          I'm looking for opportunities where I can contribute genuine ideas, grow technically, and make a real impact.
+          If you want someone who brings energy and original thinking, that's me.
+        </p>
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="ic-icon">🎓</div>
+          <div class="ic-label">Degree</div>
+          <div class="ic-val" contenteditable="true">BS Information Technology</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">🏫</div>
+          <div class="ic-label">University</div>
+          <div class="ic-val" contenteditable="true">Davao del Norte State College</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">📍</div>
+          <div class="ic-label">Location</div>
+          <div class="ic-val" contenteditable="true">Panabo City, Davao del Norte</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">🎂</div>
+          <div class="ic-label">Age</div>
+          <div class="ic-val" contenteditable="true">21 years old</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">📧</div>
+          <div class="ic-label">Email</div>
+          <div class="ic-val" contenteditable="true">marvinmatahon13@email.com</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">💼</div>
+          <div class="ic-label">Status</div>
+          <div class="ic-val" contenteditable="true">Open to Work</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page-about -->
+
+  <!-- ═══════════════════════════════════
+       SKILLS PAGE
+  ════════════════════════════════════ -->
+  <div class="page pg-wrap" id="page-skills">
+
+    <div class="pg-header">
+      <div class="pg-eyebrow">What I Do</div>
+      <div class="pg-title">My <span>Skills</span></div>
+      <div class="pg-sub">Technical strengths and what makes me, me</div>
+    </div>
+
+    <div class="skills-layout">
+
+      <!-- Hardware (featured) -->
+      <div class="sk-box featured">
+        <div class="sk-title">🔧 Hardware</div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>PC Assembly & Troubleshooting</span><span class="sk-pct">90%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="90"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Network Setup & Cabling</span><span class="sk-pct">82%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="82"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Component Diagnostics</span><span class="sk-pct">85%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+        </div>
+        <div class="sk-item">
+          
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div class="sk-box">
+        <div class="sk-title">💻 Programming</div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Python</span><span class="sk-pct">68%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="68"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>HTML / CSS</span><span class="sk-pct">72%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="72"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>JavaScript</span><span class="sk-pct">60%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="60"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Java</span><span class="sk-pct">55%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="55"></div></div>
+        </div>
+      </div>
+
+      <!-- AI & Prompting -->
+      <div class="sk-box">
+        <div class="sk-title">🤖 AI & Prompting</div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Prompt Engineering</span><span class="sk-pct">88%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="88"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>AI Tool Usage</span><span class="sk-pct">85%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+        </div>
+        <div class="sk-item">
+          <div class="sk-name-row"><span>Workflow Automation</span><span class="sk-pct">75%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Soft skills full width -->
+      <div class="sk-box" style="grid-column: span 3;">
+        <div class="sk-title">⭐ What Sets Me Apart</div>
+        <div class="soft-tags">
+          <span class="stag">💡 Idea Generation<br><small style="opacity:.6">Originated our capstone</small></span>
+          <span class="stag">🌱 Idealistic Realist<br><small style="opacity:.6">Dream big, stay grounded</small></span>
+          <span class="stag">🔍 Problem Solver<br><small style="opacity:.6">Hardware-first mindset</small></span>
+          <span class="stag">⚡ Fast Learner<br><small style="opacity:.6">Adapts quickly</small></span>
+          <span class="stag">🤝 Team Player<br><small style="opacity:.6">Collaborative spirit</small></span>
+          <span class="stag">🗺 From Davao del Norte<br><small style="opacity:.6">Panabo City pride</small></span>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /page-skills -->
+
+  <!-- ═══════════════════════════════════
+       PROJECTS PAGE
+  ════════════════════════════════════ -->
+  <div class="page pg-wrap" id="page-projects">
+
+    <div class="pg-header">
+      <div class="pg-eyebrow">What I've Built</div>
+      <div class="pg-title">My <span>Projects</span></div>
+      <div class="pg-sub">Click the image area to upload a screenshot · click any text to edit</div>
+    </div>
+
+    <div class="cards-grid" id="projectsGrid">
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)" style="background: linear-gradient(135deg, #1c1510, #3d2008)">
+          <span>🖥</span>
+          <div class="card-img-overlay">📷 Upload Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="Capstone Project">
+          <div class="card-tags">
+            <span class="ctag">My Idea</span>
+            <span class="ctag">Hardware</span>
+            <span class="ctag">Team Lead</span>
+          </div>
+          <textarea class="card-desc">This was my brainchild — I came up with the concept for our capstone and led it from idea to implementation. Click to add details about your project.</textarea>
+        </div>
+      </div>
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)" style="background: linear-gradient(135deg, #101c14, #0f2d1a)">
+          <span>🔧</span>
+          <div class="card-img-overlay">📷 Upload Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="Hardware Project">
+          <div class="card-tags">
+            <span class="ctag">Hardware</span>
+            <span class="ctag">Assembly</span>
+          </div>
+          <textarea class="card-desc">A hands-on hardware project showcasing my skills in assembly, diagnostics, and system setup. Click to edit this description.</textarea>
+        </div>
+      </div>
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)" style="background: linear-gradient(135deg, #18100c, #2d1810)">
+          <span>🤖</span>
+          <div class="card-img-overlay">📷 Upload Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="AI-Assisted Project">
+          <div class="card-tags">
+            <span class="ctag">AI Prompting</span>
+            <span class="ctag">Python</span>
+          </div>
+          <textarea class="card-desc">Leveraged my prompting skills to build something cool with AI assistance. Click to edit and describe your project here.</textarea>
+        </div>
+      </div>
+
+      <button class="add-btn" onclick="addCard('projectsGrid','project')">
+        <span class="plus">＋</span>
+        Add Project
+      </button>
+
+    </div>
+  </div><!-- /page-projects -->
+
+  <!-- ═══════════════════════════════════
+       CERTIFICATES PAGE
+  ════════════════════════════════════ -->
+  <div class="page pg-wrap" id="page-certs">
+
+    <div class="pg-header">
+      <div class="pg-eyebrow">Achievements</div>
+      <div class="pg-title">My <span>Certificates</span></div>
+      <div class="pg-sub">Click any text to edit</div>
+    </div>
+
+    <div class="cards-grid" id="certsGrid">
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)">
+          <img src="cert1.jfif" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div class="card-img-overlay">📷 Change Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="Training / Seminar">
+          <div class="card-tags"><span class="ctag">Issuer</span><span class="ctag">Year</span></div>
+          <textarea class="card-desc">Attended trainings and seminars relevant to IT.</textarea>
+        </div>
+      </div>
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)">
+          <img src="cert2.jfif" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div class="card-img-overlay">📷 Change Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="Training / Seminar">
+          <div class="card-tags"><span class="ctag">Organization</span><span class="ctag">Year</span></div>
+          <textarea class="card-desc">Attended trainings and seminars relevant to IT.</textarea>
+        </div>
+      </div>
+
+      <div class="img-card">
+        <div class="card-img-box" onclick="pickImg(this)">
+          <img src="cert 3.jfif" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div class="card-img-overlay">📷 Change Image</div>
+        </div>
+        <div class="card-body">
+          <input class="card-title" type="text" value="Capstone Completion Certificate">
+          <div class="card-tags"><span class="ctag">Issuer</span><span class="ctag">Year</span></div>
+          <textarea class="card-desc"></textarea>
+        </div>
+      </div>
+
+      <button class="add-btn" onclick="addCard('certsGrid','cert')">
+        <span class="plus">＋</span>
+        Add Certificate
+      </button>
+
+    </div>
+  </div><!-- /page-certs -->
+
+  <!-- ═══════════════════════════════════
+       CONTACT PAGE
+  ════════════════════════════════════ -->
+  <div class="page" id="page-contact">
+    <div class="contact-wrap">
+
+      <div class="c-left">
+        <h2>Let's Work<br><span>Together ✦</span></h2>
+        <p>
+          I'm actively looking for opportunities to grow and contribute.
+          Whether you have a project, an idea, or just want to connect — I'm here!
+        </p>
+        <div class="c-info">
+          <a href="mailto:marvin@email.com">📧 marvin@email.com</a>
+          <a href="#">🔗 linkedin.com/in/marvinmatahon</a>
+          <a href="#">💻 github.com/marvinmatahon</a>
+          <a href="#">📍 Panabo City, Davao del Norte</a>
+        </div>
+      </div>
+
+      <form class="c-form" onsubmit="sendMsg(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your message…" required></textarea>
+        <button type="submit" id="sendBtn">Send Message ✈</button>
+      </form>
+
+    </div>
+  </div><!-- /page-contact -->
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
